@@ -2,6 +2,10 @@
 
 This is a responsive and interactive dashboard built with **React**, **TailwindCSS**, and **Chart.js**. It displays various sales-related metrics such as total sales, sales distribution, revenue updates, yearly sales comparison, active user tracking, and payment gateway statistics.
 
+## Live Demo
+
+[Click here](https://sales-dashboard-ashen.vercel.app/)
+
 ## Approach
 
 - **Design**: The dashboard is designed to look great.
