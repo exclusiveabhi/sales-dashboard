@@ -4,9 +4,7 @@ This is a responsive and interactive dashboard built with **React**, **TailwindC
 
 ## Approach
 
-The goal of this project is to replicate the dashboard design shared in the internship task PDF with a focus on:
-
-- **Responsive Design**: The dashboard is designed to look great on desktops, tablets, and smartphones.
+- **Design**: The dashboard is designed to look great.
 - **Interactive Charts**: Sales metrics are displayed using dynamic charts built with **Chart.js**, including Bar, Pie, and Line charts.
 - **Data Fetching**: Data is fetched from a mock API (using `mockApi.js`) to simulate real-time updates.
 - **Performance Optimization**: Techniques such as **React hooks** (useState, useEffect) and proper chart destruction are employed to optimize performance and avoid canvas reuse errors.
@@ -38,8 +36,8 @@ Follow these steps to get the project up and running:
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/aspireit-dashboard.git
-cd aspireit-dashboard
+git clone https://github.com/exclusiveabhi/sales-dashboard.git
+cd sales-dashboard
 ```
 
 ### 2. Install Dependencies
@@ -58,86 +56,7 @@ Ensure that TailwindCSS is correctly set up. If you followed the steps above, yo
 To start the development server and view the dashboard in your browser, run:
 
 ```bash
-npm start
+npm run dev
 ```
 
-This will start the development server on `http://localhost:3000`, and you can view the dashboard in your browser.
-
-### 5. Build the Project (For Production)
-To build the project for production, use:
-
-```bash
-npm run build
-```
-
-This will create an optimized build of your application in the `build/` directory.
-
-### 6. Deploy the Application
-You can deploy the built project to platforms like **Netlify** or **Vercel** for free. 
-
-- For **Netlify**, you can follow the steps in [Netlify's deployment documentation](https://docs.netlify.com/site-deploys/create-deploys/).
-- For **Vercel**, you can deploy your project by running:
-  ```bash
-  vercel
-  ```
-  (Make sure you have **Vercel CLI** installed).
-
----
-
-## Folder Structure
-
-The folder structure of the project is as follows:
-
-```
-aspireit-dashboard/
-├── public/
-│   ├── index.html               # Main HTML file
-├── src/
-│   ├── components/              # React components
-│   │   ├── ActiveUsersCard.js   # Active user card component
-│   │   ├── BarChart.js          # Bar chart component (total sales)
-│   │   ├── ErrorBoundary.js     # Error boundary component
-│   │   ├── PaymentGateways.js  # Payment gateways statistics
-│   │   ├── PieChart.js          # Pie chart component (sales distribution)
-│   │   ├── RevenueUpdates.js    # Revenue updates component
-│   │   ├── SalesComparison.js   # Sales comparison component (line chart)
-│   │   ├── SkeletonLoader.js    # Skeleton loader component
-│   ├── App.js                   # Main app component
-│   ├── index.css                # TailwindCSS and custom styles
-│   ├── index.js                 # Entry point for the app
-│   ├── mockApi.js               # Mock API for data fetching
-├── tailwind.config.js           # TailwindCSS configuration
-├── package.json                 # Project dependencies and scripts
-└── README.md                    # Project documentation
-```
-
----
-
-## Additional Information
-
-- **Real-time Data**: The mock API (`mockApi.js`) simulates fetching data. In a real-world scenario, you could replace this with an actual API.
-- **Responsive Design**: TailwindCSS makes it easy to handle different screen sizes. The grid layout and Tailwind utility classes automatically adapt the dashboard to desktops, tablets, and smartphones.
-
----
-
-## Troubleshooting
-
-- **Tailwind not applying styles**: Ensure that you've followed the correct installation steps for TailwindCSS. Check if `index.css` has the Tailwind directives and that `index.css` is imported in `index.js`.
-  
-- **Chart not rendering**: Ensure that `Chart.js` components (Bar, Pie, Line) are properly registered using `ChartJS.register()`.
-
----
-
-### **Contributors**
-- **Your Name** - [GitHub Profile](https://github.com/your-username)
-
----
-
-### **License**
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-### **Conclusion**
-
-This README provides a clear guide for setting up and running the **Aspireit Dashboard** project locally, building it for production, and deploying it online. It also gives an overview of the project structure and technologies used. Let me know if any further details are needed!
+This will start the development server on `http://localhost:5173`, and you can view the dashboard in your browser.
